@@ -12,4 +12,4 @@ jobs:
         uses: cypress-io/github-action@v4
         with:
           start: npm start
-          wait-for: "http://localhost:3000/"
+          wait-for: "http://localhost:3000"
