@@ -12,8 +12,11 @@ describe("All gameModes are available", () => {
     cy.get("[name=status__difficulty-select]").select(1);
     cy.get(".game__cell--filled").should("have.length", 40);
   });
-  it("Medium mode works", () => {
+  it("Hard mode works", () => {
     cy.get("[name=status__difficulty-select]").select(2);
     cy.get(".game__cell--filled").should("have.length", 30);
+  });
+  it("fails", () => {
+    cy.get("Nothing");
   });
 });
